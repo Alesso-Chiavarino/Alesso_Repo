@@ -1000,27 +1000,27 @@ footer .redes-sociales .instagram:hover {
     .menu ul {
         position: fixed;
         top: 130px;
-        right: 100%;
+        right: -100%;
         background-color: #222;
-        width: 30%;
+        width: 45%;
     }
 
     .menu ul li a {
         color: #fff;
-        border-bottom: 2px solid transparent;
-    }
-
-    .menu ul li:last-child {
-        padding: 20px;
+        padding-bottom: 25px;
     }
 
     #check:checked ~ .menu ul{
         right: 0px;
-        /* transition: all .25s; */
+        transition: all .40s;
     }
 
     .menu ul li a:hover {
-        border-bottom: 1.5px solid rgb(255, 255, 255);
+        border: none;
+    }
+    
+    .menu ul li:hover {
+        background-color: rgba(255,255,255,.2);
     }
 
     .contenedorTexto h1{
