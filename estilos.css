@@ -902,36 +902,6 @@ footer .redes-sociales .instagram:hover {
 /* TAMAÑO IPHONE 13 */
 @media screen and (max-width: 400px) and (min-width: 321px) {
 
-    @keyframes banner{
-	0%, 20%{
-		background-image: url("imagenes/imagen1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-	}
-
-	25%, 45%{
-        background-image: url("imagenes/imagen2.webp");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-	}
-
-	50%, 70%{
-        background-image: url("imagenes/imagen3.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-	}
-
-	75%, 100%{
-        background-image: url("imagenes/imagen4.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-	}
-}
-
     .logo a img {
         width: 200px;
         margin-bottom: 26px;
