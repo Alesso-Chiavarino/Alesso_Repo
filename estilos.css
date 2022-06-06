@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -146,6 +150,12 @@ header label i:hover {
 	padding: 16px 37px;
 	display: inline-block;
 	border-radius: 50px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.contenedorTexto a:hover {
+    background: rgba(255, 255, 255, .3);
 }
 
 .btn-mas {
@@ -161,7 +171,7 @@ header label i:hover {
 
 .main_inicio .acerca h2 {
     padding-top: 50px;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Lora', serif;
     font-size: 40px;
     font-weight: 500;
 }
@@ -631,7 +641,7 @@ footer .localizacion {
 
 footer .localizacion{
     padding: 40px;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Lora', serif;
     font-size: 40px;
     font-weight: 500;
 }
