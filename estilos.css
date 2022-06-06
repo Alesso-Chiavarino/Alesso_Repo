@@ -668,6 +668,14 @@ footer .redes-sociales .instagram:hover {
 
 /* TAMAÑO CELULAR (320PX) */
 @media screen and (max-width: 320px) and (min-width: 0px) {
+
+    .logo a img {
+        width: 200px;
+        margin-bottom: 26px;
+        position: relative;
+        top: 18px;
+    }
+
     .arriba .logo {
         margin-left: -60px;
     }
@@ -833,6 +841,13 @@ footer .redes-sociales .instagram:hover {
 
 /* TAMAÑO IPHONE 13 */
 @media screen and (max-width: 400px) and (min-width: 321px) {
+
+    .logo a img {
+        width: 200px;
+        margin-bottom: 26px;
+        position: relative;
+        top: 18px;
+    }
 
     .arriba .logo {
         margin-left: -65px;
