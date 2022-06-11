@@ -448,7 +448,7 @@ footer {
 
 .contenedor-imagen2 {
     float: right;
-    background-image: url(imagenes/messi.png);
+    /* background-image: url(imagenes/messi.png);   LA FOTO LA SAQUE Y LO PUSE CON BOOTSTRAP  */
     vertical-align: top;
     margin-top: 50px;
     height: 500px;
@@ -456,8 +456,8 @@ footer {
     background-position: center;
     position: absolute;
     left: 50%;
-    width: 500px;
-    height: 500px;
+    /* width: 500px; */
+    /* height: 500px; */
     box-shadow: 10px 15px 15px 0px rgb(0 0 0 / 35%);
     margin-left: 200px;
 }
@@ -541,7 +541,8 @@ footer {
     padding: 40px;
     font-size: 40px;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-top: -150px;
+    margin-bottom: 100px;
 }
 
 .formulario {
@@ -554,13 +555,13 @@ footer {
 
 .formulario input[type="text"],
 input[type="email"] {
-    background: none;
-    border: none;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 40px;
-    border-bottom: 2px solid rgb(194, 194, 194);
-    padding: 10px;
+    /* background: none; */
+    /* border: none; */
+    /* font-size: 18px; */
+    /* text-align: center; */
+    /* margin-bottom: 40px; */
+    /* border-bottom: 2px solid rgb(194, 194, 194); */
+    /* padding: 10px; */
     outline: none;
     color: rgba(255, 255, 255, 0.87);
 }
@@ -684,6 +685,7 @@ footer .redes-sociales .contenedor-redes {
 footer .redes-sociales {
     background-color: #464646;
     padding: 60px 0;
+    margin-top: -7px; /* Bootstrap agrega margenes :( asi que esa es la solu */
 }
 
 footer .redes-sociales a {
@@ -720,12 +722,39 @@ footer .redes-sociales .instagram:hover {
 .copy {
     width: 100%;
     background-color: rgb(0, 0, 0);
+    margin-bottom: -16px;
 }
 
 .copy p {
     color: #fff;
     text-align: center;
     padding: 15px;
+}
+
+/*  OTROS CAMBIOS PARA CORREGIR ERRORES AL PONER BOOTSTRAP :(  */
+
+.edit {
+    padding-top: 100px;
+}
+
+.text-center {
+    color: #fff;
+}
+
+.desc_icono {
+    margin-right: 20px;
+}
+
+.desc_icono span {
+    margin-right: -40px;
+}
+
+.cont-carac h3 {
+    padding: 0;
+}
+
+.formulario_boot label {
+    color: rgba(255, 255, 255, .8);
 }
 
 /* ----- RESPONSIVE ----- */
@@ -825,7 +854,7 @@ footer .redes-sociales .instagram:hover {
     }
 
     .cont-carac .desc_icono i{
-        margin-right: 40px;
+        /* margin-right: 40px; */ /* CAMBIO POR BOOTSTRAP */
         margin-left: 1px;
     }
 
@@ -849,7 +878,7 @@ footer .redes-sociales .instagram:hover {
 
     .contenedor-imagen2 {
         position: absolute;
-        top: 780px;
+        top: 880px; /*CAMBIOS BOOTSTRAP */
         left: -140px;
         width: 200px;
         height: 200px;
@@ -896,6 +925,12 @@ footer .redes-sociales .instagram:hover {
 
     .contacto .titulo {
         margin-bottom: 0;
+    }
+
+/* CAMBIO BOOTSTRAP */
+
+    .card {
+        margin: 0 10px;
     }
 }
 
@@ -999,7 +1034,7 @@ footer .redes-sociales .instagram:hover {
 
     .contenedor-imagen2 {
         position: absolute;
-        top: 655px;
+        top: 735px; /*CAMBIOS BOOTSTRAP */
         left: -100px;
         width: 200px;
         height: 200px;
@@ -1074,11 +1109,13 @@ footer .redes-sociales .instagram:hover {
         right: -100%;
         background-color: #222;
         width: 45%;
+        padding: 0; /* AGREGADO POR BOOTSTRAP */
     }
     
     .menu ul li a {
         color: #fff;
         padding-bottom: 25px;
+        /* margin-right: 20px; */
     }
     
     #check:checked ~ .menu ul{
@@ -1098,3 +1135,4 @@ footer .redes-sociales .instagram:hover {
         font-size: 38px;
     }
 }
+
