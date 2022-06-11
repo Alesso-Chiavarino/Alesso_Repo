@@ -757,6 +757,10 @@ footer .redes-sociales .instagram:hover {
     color: rgba(255, 255, 255, .8);
 }
 
+.btn_feo {
+    margin-top: 50px;
+}
+
 /* ----- RESPONSIVE ----- */
 
 /* TAMAÑO CELULAR (320PX) */
@@ -915,7 +919,7 @@ footer .redes-sociales .instagram:hover {
     }
 
     .contenedor-imagen {
-        height: 800px;
+        height: 1100px; /* CAMBIO POR BOOTSTRAP */
     }
 
     .formulario .boton {
@@ -932,6 +936,13 @@ footer .redes-sociales .instagram:hover {
     .card {
         margin: 0 10px;
     }
+
+    .contacto .titulo {
+        padding-top: 200px;
+    }
+
+    .contenedor-imagen {
+        height: 920px;}
 }
 
 /* TAMAÑO IPHONE 13 */
@@ -1082,6 +1093,20 @@ footer .redes-sociales .instagram:hover {
     .contacto .titulo {
         margin-bottom: 0;
     }
+
+    /* CAMBIO POR BOOTSTRAP */
+
+    .card {
+        margin: 0 10px;
+    }
+
+    .contacto .titulo {
+        padding-top: 200px;
+    }
+
+    .contenedor-imagen {
+        height: 920px;
+    }
 }
 
 /* TAMAÑO IDEAL PARA PONER EL MENU DE HAMBURGUESA */
@@ -1115,7 +1140,6 @@ footer .redes-sociales .instagram:hover {
     .menu ul li a {
         color: #fff;
         padding-bottom: 25px;
-        /* margin-right: 20px; */
     }
     
     #check:checked ~ .menu ul{
