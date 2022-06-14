@@ -238,6 +238,7 @@ footer {
     width: 30%;
     background-color: #fff;
     margin-right: 25px;
+    overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -247,7 +248,6 @@ footer {
 .casas .casa1 img {
     width: 100%;
     height: 225px;
-    border-radius: 5px 5px 0px 0px;
     vertical-align: top;
     transition: all 500ms ease;
 }
@@ -261,6 +261,7 @@ footer {
     background-color: #fff;
     width: 30%;
     margin-right: 25px;
+    overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -269,7 +270,6 @@ footer {
 .casas .casa2 img {
     width: 100%;
     height: 225px;
-    border-radius: 5px 5px 0px 0px;
     vertical-align: top;
     transition: all 500ms ease;
 }
@@ -282,6 +282,7 @@ footer {
 .casas .casa3 {
     width: 30%;
     background-color: #fff;
+    overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -290,7 +291,6 @@ footer {
 .casas .casa3 img {
     width: 100%;
     height: 225px;
-    border-radius: 5px 5px 0px 0px;
     vertical-align: top;
     transition: all 500ms ease;
 }
@@ -304,6 +304,7 @@ footer {
     width: 30%;
     background-color: #fff;
     margin-right: 25px;
+    overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -312,7 +313,6 @@ footer {
 .casas .casa4 img {
     width: 100%;
     height: 225px;
-    border-radius: 5px 5px 0px 0px;
     vertical-align: top;
     transition: all 500ms ease;
 }
@@ -326,6 +326,7 @@ footer {
     width: 30%;
     background-color: #fff;
     margin-right: 25px;
+    overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -334,7 +335,6 @@ footer {
 .casas .casa5 img {
     width: 100%;
     height: 225px;
-    border-radius: 5px 5px 0px 0px;
     vertical-align: top;
     transition: all 500ms ease;
 }
@@ -347,7 +347,8 @@ footer {
 .casas .casa6 {
     width: 30%;
     background-color: #fff;
-    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    border-radius: 5px;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -356,7 +357,6 @@ footer {
 .casas .casa6 img {
     width: 100%;
     height: 225px;
-    border-radius: 5px 5px 0px 0px;
     vertical-align: top;
     transition: all 500ms ease;
 }
@@ -420,9 +420,13 @@ footer {
 /* ----- NOSOTROS ----- */
 
 .main_nosotros {
-    background-color: rgba(236, 236, 236, 0.308);
+    background: #3c4045;
     padding-top: 125px;
 }
+
+/* .info {
+    height: 800px;
+} */
 
 .cordoba {
     width: 100%;
@@ -433,7 +437,7 @@ footer {
 .cordoba .contenedor-texto .tit {
     text-align: center;
     margin-bottom: 20px;
-    color: #5a5a5a;
+    color: #acacac;
     font-weight: 600;
     font-family: 'Lora', serif;
 }
@@ -443,7 +447,7 @@ footer {
     margin-left: 150px;
     max-width: 600px;
     line-height: 20px;
-    color: #5a5a5a;
+    color: #979797;
 }
 
 .contenedor-imagen2 {
@@ -473,7 +477,7 @@ footer {
     padding: 20px;
     font-size: 55px;
     font-weight: 400;
-    color: #5a5a5a;
+    color: #acacac;
 }
 
 .informacion h2 {
@@ -481,14 +485,14 @@ footer {
 }
 
 .informacion p {
-    color: #5a5a5a;
+    color: #979797;
     font-weight: 400;
 }
 
 .informacion .surgio {
     text-align: center;
     margin: 20px 20px;
-    color: #5a5a5a;
+    color: #acacac;
     font-weight: 600;
     font-family: 'Lora', serif;
 }
@@ -509,6 +513,71 @@ footer {
     "header"
     "nosotros"
     "footer";
+}
+
+.clientes {
+    background: #ffffff;
+    color: #fff; 
+    height: 500px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -20px;
+}
+
+.clientes h2 {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #353535;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    margin: 80px 0;
+}
+
+.clientes .cliente1 {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.clientes .cliente2 {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.cliente1 .cont_img_cliente {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.cliente2 .cont_img_cliente {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 30px;
+    padding-right: 100px;
+}
+
+.cont_img_cliente .foto_cliente {
+    vertical-align: top;
+}
+
+.opinion {
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    align-self: center;
+    width: 70%;
 }
 
 /* ----- CONTACTO ----- */
@@ -682,7 +751,7 @@ footer .redes-sociales .contenedor-redes {
 }
 
 footer .redes-sociales {
-    background-color: #464646;
+    background: #3c4045;
     padding: 60px 0;
 }
 
@@ -877,6 +946,39 @@ footer .redes-sociales .instagram:hover {
         padding-bottom: 20px;
     }
 
+    .clientes {
+        margin-bottom: -80px;
+    }
+
+    .clientes .cliente1{
+        /* margin: auto; */
+        padding: 0 10px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .clientes .cliente2{
+        /* margin: auto; */
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .clientes h2 {
+        font-size: 23px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .cliente1 .cont_img_cliente{
+        position: relative;
+    }
+
+    .clientes .opinion {
+        font-size: 12px;
+        line-height: normal;
+    }
+
     .grid_contacto {
         grid-template-columns: 320px;
     }
@@ -995,6 +1097,38 @@ footer .redes-sociales .instagram:hover {
     .cordoba .contenedor-texto p {
         font-size: 14px;
         padding: 0 40px;
+    }
+    
+    .clientes {
+        margin-bottom: -50px;
+    }
+
+    .clientes .cliente1{
+        margin-bottom: 50px;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .clientes .cliente2{
+        /* margin: auto; */
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .clientes h2 {
+        font-size: 25px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .cliente1 .cont_img_cliente{
+        position: relative;
+    }
+
+    .clientes .opinion {
+        font-size: 13px;
+        line-height: 20px;
     }
 
     .contenedor-imagen2 {
