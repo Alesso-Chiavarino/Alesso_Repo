@@ -1,0 +1,1116 @@
+@import "colores";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.arriba {
+    display: flex;
+    justify-content: space-around;
+    background-color: $colorBack;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    img {
+        vertical-align: top;
+        margin-left: 30px;
+    }
+}
+
+body {
+    background: $colorBack;
+}
+
+#check {
+    display: none;
+}
+
+header {
+    label {
+        display: none;
+        i {
+            color: #000;
+            font-size: 30px;
+            padding: 10px;
+            border-left: 1px solid rgba(0, 0, 0, 0.178);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.menu {
+    padding-top: 37px;
+    ul {
+        li {
+            display: inline-block;
+            padding: 20px;
+            list-style: none;
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                padding-bottom: 8px;
+                &:hover {
+                    border-bottom: 1.5px solid black;
+                }
+            }
+        }
+    }
+}
+
+/* ----- INICIO ----- */
+
+.banner {
+	width: 100%;
+	height: 700px;
+	animation: banner 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes banner {
+	0%, 20% {
+		background-image: url("imagenes/imagen1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+	}
+
+	25%, 45% {
+        background-image: url("imagenes/imagen2.webp");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+	}
+
+	50%, 70% {
+        background-image: url("imagenes/imagen3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+	}
+
+	75%, 100% {
+        background-image: url("imagenes/imagen4.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+	}
+}
+
+.contenedorImagen {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+
+.contenedorTexto {
+    margin-top: 200px;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+    z-index: 0;
+    h1 {
+        color: #fff;
+	    font-size: 50px;
+	    margin-bottom: 20px;
+	    letter-spacing: 1px;
+    }
+    a {
+        color: #fff;
+	    text-decoration: none;
+	    background: rgba(255, 255, 255, .2);
+	    padding: 16px 37px;
+	    display: inline-block;
+	    border-radius: 50px;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        &:hover {
+            background: rgba(255, 255, 255, .3);
+        }
+    }
+}
+
+.btn-mas {
+    margin-top: 40px;
+}
+
+.main_inicio {
+    .acerca {
+        width: 100%;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+        h2 {
+            padding-top: 50px;
+            font-family: 'Lora', serif;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        p {
+            color: #5a5a5a;
+            font-weight: 600;
+            font-size: 1em;
+            line-height: 30px;
+            width: 80%;
+            margin: 40px auto 60px auto;
+        }
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+.main_inicio {
+    grid-area: acerca;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid_inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: 
+    "header"
+    "acerca"
+    "footer";
+}
+
+/* ----- VENTA Y ALQUILER ----- */
+
+.main_venta {
+    background-color: #303030;
+    padding-top: 125px;
+}
+
+.titu {
+    font-family: 'Lora', serif;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.casas {
+    width: 100%;
+    max-width: 1267px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    .casa1 {
+        width: 30%;
+        background-color: #fff;
+        margin-right: 25px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 500ms ease;
+        img {
+            width: 100%;
+            height: 225px;
+            vertical-align: top;
+            transition: all 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+                opacity:  .8;
+            }
+        }
+    }
+    .casa2 {
+        background-color: #fff;
+        width: 30%;
+        margin-right: 25px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 225px;
+            vertical-align: top;
+            transition: all 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+                opacity:  .8;
+            }
+        }
+    }
+    .casa3 {
+        width: 30%;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 225px;
+            vertical-align: top;
+            transition: all 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+                opacity:  .8;
+            }
+        }
+    }
+    .casa4 {
+        width: 30%;
+        background-color: #fff;
+        margin-right: 25px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 225px;
+            vertical-align: top;
+            transition: all 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+                opacity:  .8;
+            }
+        }
+    }
+    .casa5 {
+        width: 30%;
+        background-color: #fff;
+        margin-right: 25px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 225px;
+            vertical-align: top;
+            transition: all 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+                opacity:  .8;
+            }
+        }
+    }
+    .casa6 {
+        width: 30%;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 225px;
+            vertical-align: top;
+            transition: all 500ms ease;
+            &:hover {
+                transform: scale(1.2);
+                opacity:  .8;
+            }
+        }
+    }
+}
+
+.desc_icono {
+    display: flex;
+    justify-content: space-between;
+    color: #3f3f3f;
+    span {
+        margin-left: -45px;
+        color: #3f3f3f;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+    }
+}
+
+.cont-carac {
+    padding: 20px;
+    h3 {
+        text-align: right;
+        font-size: 16px;
+        padding: 5px;
+        font-family: 'Lora', serif;
+    }
+    .descrip-casa {
+        color: #3f3f3f;
+        font-size: 13px;
+        margin-top: 20px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+}
+
+.cont-img {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.main_venta {
+    grid-area: venta;
+}
+
+.grid_venta_alquiler {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "venta"
+    "footer";
+}
+
+/* ----- NOSOTROS ----- */
+
+.main_nosotros {
+    background: #3c4045;
+    padding-top: 125px;
+}
+
+.cordoba {
+    width: 100%;
+    padding: 45px 0px 45px 0px;
+    float: left;
+    .contenedor-texto {
+        text-align: center;
+        margin-left: 150px;
+        max-width: 600px;
+        line-height: 20px;
+        color: #979797;
+        .tit {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #acacac;
+            font-weight: 600;
+            font-family: 'Lora', serif;
+        }
+    }
+}
+
+.contenedor-imagen2 {
+    float: right;
+    background-image: url(imagenes/messi.png);
+    vertical-align: top;
+    margin-top: 50px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 15px 15px 0px rgb(0 0 0 / 35%);
+    margin-left: 200px;
+}
+
+.informacion {
+    text-align: center;
+    margin-left: 50px;
+    max-width: 800px;
+    .titulo {
+        font-family: 'Lora', serif;
+        padding: 20px;
+        font-size: 55px;
+        font-weight: 400;
+        color: #acacac;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        color: #979797;
+        font-weight: 400;
+    }
+    .surgio {
+        text-align: center;
+        margin: 20px 20px;
+        color: #acacac;
+        font-weight: 600;
+        font-family: 'Lora', serif;
+    }
+    .tex {
+        padding-bottom: 40px;
+    }
+}
+
+.main_nosotros {
+    grid-area: nosotros;
+}
+
+.grid_nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "nosotros"
+    "footer";
+}
+
+.clientes {
+    background: #ffffff;
+    color: #fff; 
+    height: 500px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -20px;
+    h2 {
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        font-size: 40px;
+        color: #353535;
+        padding-top: 40px;
+        margin-bottom: 30px;
+        margin: 80px 0;
+    }
+    .cliente1 {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 20px;
+        text-align: left;
+        .cont_img_cliente {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+    }
+    .cliente2 {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        .cont_img_cliente {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-left: 30px;
+            padding-right: 100px;
+        }
+    }
+}
+
+.cont_img_cliente {
+    .foto_cliente {
+        vertical-align: top;
+    }
+}
+
+.opinion {
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    align-self: center;
+    width: 70%;
+}
+
+/* ----- CONTACTO ----- */
+
+.contenedor-imagen {
+    padding-top: 100px;
+    background-image: url(imagenes/contacto.webp);
+    vertical-align: top;
+    background-color: rgb(49, 49, 49);
+    background-blend-mode: soft-light;
+    width: 100%;
+    height: 970px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.contacto {
+    width: 100%;
+    text-align: center;
+    h3 {
+        color: #fff;
+        font-family: 'Lora', serif;
+        padding: 40px;
+        font-size: 40px;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }
+}
+
+.formulario {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    input[type="text"],input[type="email"] {
+        background: none;
+        border: none;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 2px solid rgb(194, 194, 194);
+        padding: 10px;
+        outline: none;
+        color: rgba(255, 255, 255, 0.87);
+        &:focus {
+            border-bottom: 2px solid rgb(255, 255, 255);
+        }
+    }
+    textarea {
+        color: rgba(255, 255, 255, 0.87);
+        background: none;
+        border: none;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 50px;
+        border-bottom: 2px solid rgb(194, 194, 194);
+        padding: 10px;
+        outline: none;
+        &:focus {
+            border-bottom: 2px solid rgb(255, 255, 255);
+        }
+    }
+    .boton {
+        font-size: 16px;
+        background: none;
+        border: none;
+        border: 2px solid rgb(230, 230, 230);
+        color: #fff;
+        width: 170px;
+        padding: 20px;
+        margin: auto;
+        cursor: pointer;
+        outline: none;
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+::placeholder { 
+    color: rgba(255, 255, 255, 0.87);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.main_contacto {
+    grid-area: contacto;
+}
+
+.grid_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "contacto"
+    "footer";
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background: #F4F6F6;
+    width: 100%;
+    .localizacion {
+        text-align: center;
+        padding: 40px;
+        font-family: 'Lora', serif;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .iframe {
+        width: 100%;
+        height: 600px;
+    }
+    .redes-sociales {
+        margin-top: -4px;
+        width: 100%;
+        background: #3c4045;
+        padding: 60px 0;
+        .contenedor-redes {
+            display: flex;
+            justify-content: center;
+        }
+        a {
+            color: #fff;
+            text-align: center;
+            width: 100px;
+            display: block;
+            padding: 15px 0;
+            border-radius: 3px;
+            font-size: 30px;
+            margin: 0 20px;
+        }
+        .twitter {
+            &:hover {
+                background-color: #1da1f2;
+            }
+        }
+        .facebook {
+            &:hover {
+                background-color: #1877f2;
+            }
+        }
+        .youtube {
+            &:hover {
+                background-color: #ff0000;
+            }
+        }
+        .github {
+            &:hover {
+                background-color: #333;
+            }
+        }
+        .instagram {
+            &:hover {
+                background-color: #e1306c;
+            }
+        }
+    }
+}
+
+.contenedorUbi {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+    .direccion {
+        line-height: 27px;
+    }
+}
+
+.horarios {
+    .horariosHijo {
+        h4 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        p {
+            line-height: 27px;
+        }
+    }
+}
+
+.copy {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    p {
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* ----- RESPONSIVE ----- */
+
+/* TAMAÑO CELULAR (320PX) */
+@media screen and (max-width: 320px) and (min-width: 0px) {
+
+    .logo {
+        margin-left: -60px;
+        a {
+            img {
+                width: 200px;
+                margin-bottom: 26px;
+                position: relative;
+                top: 13px;
+            }
+        }
+    }
+
+    .arriba {
+        label {
+            margin-right: -40px; 
+        }
+    }
+    
+    .contenedorTexto {
+        .prop-casas {
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    
+    .grid_inicio {
+        grid-template-columns: 320px;
+    }
+
+    .contenedorUbi {
+        align-items: center;
+        .direccion {
+            p {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        .horarios {
+            .horariosHijo {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .grid_venta_alquiler {
+        grid-template-columns: 320px;
+    }
+
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 90%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .cont-carac {
+        p {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        .desc_icono {
+            i {
+                margin-right: 40px;
+                margin-left: 1px;
+            }
+        }
+    }
+
+    .grid_nosotros {
+        grid-template-columns: 320px;
+    }
+
+    .cordoba {
+        padding-bottom: 20px;
+        .contenedor-texto {
+            margin: 0;
+            padding: 0;
+            .tit {
+                font-size: 25px;
+            }
+            p {
+                font-size: 14px;
+                padding: 0 40px;
+            }
+        }
+    }
+
+    .contenedor-imagen2 {
+        position: absolute;
+        top: 780px;
+        left: -140px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .informacion {
+        margin: 0;
+        .titulo {
+            font-size: 35px;
+        }
+        .texto_nosotros {
+            margin-bottom: 250px;
+        }
+        p {
+            font-size: 14px;
+            padding: 0 40px;
+        }
+    }
+
+    .clientes {
+        margin-bottom: -80px;
+        .cliente1 {
+            padding: 0 10px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .cliente2 {
+            padding: 0 10px;
+            width: 100%;
+        }
+        h2 {
+            font-size: 23px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .opinion {
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+
+    .grid_contacto {
+        grid-template-columns: 320px;
+    }
+
+    .formulario {
+        width: 80%;
+        .boton {
+            width: 120px;
+            padding: 15px;
+        }
+    }
+
+    .contenedor-imagen {
+        height: 800px;
+    }
+
+    .contacto {
+        .titulo {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+/* TAMAÑO IPHONE 13 */
+@media screen and (max-width: 400px) and (min-width: 321px) {
+
+    .logo {
+        margin-left: -65px;
+        a {
+            img {
+                width: 200px;
+                margin-bottom: 26px;
+                position: relative;
+                top: 13px;
+            }
+        }
+    }
+
+    .arriba {
+        label {
+            margin-right: -30px;
+        }
+    }
+
+    .grid_inicio {
+        grid-template-columns: 400px;
+    }
+
+    .grid_venta_alquiler {
+        grid-template-columns: 400px;
+    }
+
+    .contenedorTexto {
+        .prop-casas {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 80%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .cont-carac {
+        p {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        .desc_icono {
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .grid_nosotros {
+        grid-template-columns: 400px;
+    }
+
+    .cordoba {
+        padding-bottom: 20px;
+        .contenedor-texto {
+            margin: 0;
+            padding: 0;
+            .tit {
+                font-size: 25px;
+            }
+            p {
+                font-size: 14px;
+                padding: 0 40px;
+            }
+        }
+    }
+    
+    .clientes {
+        margin-bottom: -50px;
+        .cliente1 {
+            margin-bottom: 50px;
+            padding: 0 10px;
+            width: 100%;
+        }
+        .cliente2 {
+            padding: 0 10px;
+            width: 100%;
+        }
+        h2 {
+            font-size: 25px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .opinion {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    .contenedor-imagen2 {
+        position: absolute;
+        top: 655px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .informacion {
+        margin: 0;
+        .titulo {
+            font-size: 35px;
+        }
+        .texto_nosotros {
+            margin-bottom: 250px;
+        }
+        p {
+            font-size: 14px;
+            padding: 0 40px;
+        }
+    }
+
+    .grid_contacto {
+        grid-template-columns: 400px;
+    }
+
+    .formulario {
+        width: 80%;
+        .boton {
+            width: 120px;
+            padding: 15px;
+        }
+    }
+
+    .contenedor-imagen {
+        height: 800px;
+    }
+
+    .contacto {
+        .titulo {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+/* TAMAÑO IDEAL PARA PONER EL MENU DE HAMBURGUESA */
+@media screen and (max-width: 901px){
+
+    header {
+        label {
+            display: block;
+            position: fixed;
+            top: 40px;
+            right: 40px;
+        }
+    }
+
+    .menu {
+        ul {
+            position: fixed;
+            top: 130px;
+            right: -100%;
+            background-color: #222;
+            width: 45%;
+            li {
+                padding: 0;
+                padding-top: 30px;
+                margin: 0;
+                display: block;
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    background-color: rgba(255,255,255,.2);
+                }
+                a {
+                    color: #fff;
+                    padding-bottom: 25px;
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #check {
+        &:checked ~ .menu {
+            ul {
+                right: 0px;
+                transition: all .40s;
+            }
+        }
+    }
+    
+    .contenedorTexto {
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+}
