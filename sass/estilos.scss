@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 .contenedor {
@@ -912,6 +913,10 @@ footer {
 
 /* TAMAÑO IPHONE 13 */
 @media screen and (max-width: 400px) and (min-width: 321px) {
+
+    .banner {
+        height: 600px;
+    }
 
     .logo {
         margin-left: -65px;
