@@ -1,0 +1,380 @@
+/* ----- RESPONSIVE ----- */
+
+/* TAMAÑO CELULAR (320PX) */
+@media screen and (max-width: 320px) and (min-width: 0px) {
+
+    .banner {
+        height: 600px;
+        background-attachment: local; //Arreglo para celular
+    }
+
+    .logo {
+        margin-left: -60px;
+        a {
+            img {
+                width: 200px;
+                margin-bottom: 26px;
+                position: relative;
+                top: 13px;
+            }
+        }
+    }
+
+    .arriba {
+        label {
+            margin-right: -40px; 
+        }
+    }
+    
+    .contenedorTexto {
+        .prop-casas {
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    
+    .grid_inicio {
+        grid-template-columns: 320px;
+    }
+
+    .contenedorUbi {
+        align-items: center;
+        .direccion {
+            p {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        .horarios {
+            .horariosHijo {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .grid_venta_alquiler {
+        grid-template-columns: 320px;
+    }
+
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 90%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .cont-carac {
+        p {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        .desc_icono {
+            i {
+                margin-right: 40px;
+                margin-left: 1px;
+            }
+        }
+    }
+
+    .grid_nosotros {
+        grid-template-columns: 320px;
+    }
+
+    .cordoba {
+        padding-bottom: 20px;
+        .contenedor-texto {
+            margin: 0;
+            padding: 0;
+            .tit {
+                font-size: 25px;
+            }
+            p {
+                font-size: 14px;
+                padding: 0 40px;
+            }
+        }
+    }
+
+    .contenedor-imagen2 {
+        position: absolute;
+        top: 780px;
+        left: -140px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .informacion {
+        margin: 0;
+        .titulo {
+            font-size: 35px;
+        }
+        .texto_nosotros {
+            margin-bottom: 250px;
+        }
+        p {
+            font-size: 14px;
+            padding: 0 40px;
+        }
+    }
+
+    .clientes {
+        margin-bottom: -80px;
+        .cliente1 {
+            padding: 0 10px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .cliente2 {
+            padding: 0 10px;
+            width: 100%;
+        }
+        h2 {
+            font-size: 23px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .opinion {
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+
+    .grid_contacto {
+        grid-template-columns: 320px;
+    }
+
+    .formulario {
+        width: 80%;
+        .boton {
+            width: 120px;
+            padding: 15px;
+        }
+    }
+
+    .contenedor-imagen {
+        height: 800px;
+    }
+
+    .contacto {
+        .titulo {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+/* TAMAÑO IPHONE 13 */
+@media screen and (max-width: 400px) and (min-width: 321px) {
+
+    .banner {
+        height: 600px;
+        background-attachment: local; //Arreglo para celular
+    }
+
+    .logo {
+        margin-left: -65px;
+        a {
+            img {
+                width: 200px;
+                margin-bottom: 26px;
+                position: relative;
+                top: 13px;
+            }
+        }
+    }
+
+    .arriba {
+        label {
+            margin-right: -30px;
+        }
+    }
+
+    .grid_inicio {
+        grid-template-columns: 400px;
+    }
+
+    .grid_venta_alquiler {
+        grid-template-columns: 400px;
+    }
+
+    .contenedorTexto {
+        .prop-casas {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 80%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .cont-carac {
+        p {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        .desc_icono {
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .grid_nosotros {
+        grid-template-columns: 400px;
+    }
+
+    .cordoba {
+        padding-bottom: 20px;
+        .contenedor-texto {
+            margin: 0;
+            padding: 0;
+            .tit {
+                font-size: 25px;
+            }
+            p {
+                font-size: 14px;
+                padding: 0 40px;
+            }
+        }
+    }
+    
+    .clientes {
+        margin-bottom: -50px;
+        .cliente1 {
+            margin-bottom: 50px;
+            padding: 0 10px;
+            width: 100%;
+        }
+        .cliente2 {
+            padding: 0 10px;
+            width: 100%;
+        }
+        h2 {
+            font-size: 25px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .opinion {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    .contenedor-imagen2 {
+        position: absolute;
+        top: 655px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .informacion {
+        margin: 0;
+        .titulo {
+            font-size: 35px;
+        }
+        .texto_nosotros {
+            margin-bottom: 250px;
+        }
+        p {
+            font-size: 14px;
+            padding: 0 40px;
+        }
+    }
+
+    .grid_contacto {
+        grid-template-columns: 400px;
+    }
+
+    .formulario {
+        width: 80%;
+        .boton {
+            width: 120px;
+            padding: 15px;
+        }
+    }
+
+    .contenedor-imagen {
+        height: 800px;
+    }
+
+    .contacto {
+        .titulo {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+/* TAMAÑO IDEAL PARA PONER EL MENU DE HAMBURGUESA */
+@media screen and (max-width: 901px){
+
+    header {
+        label {
+            display: block;
+            position: fixed;
+            top: 40px;
+            right: 40px;
+        }
+    }
+
+    .menu {
+        ul {
+            position: fixed;
+            top: 130px;
+            right: -100%;
+            background-color: #222;
+            width: 45%;
+            li {
+                padding: 0;
+                padding-top: 30px;
+                margin: 0;
+                display: block;
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    background-color: rgba(255,255,255,.2);
+                }
+                a {
+                    color: #fff;
+                    padding-bottom: 25px;
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #check {
+        &:checked ~ .menu {
+            ul {
+                right: 0px;
+                transition: all .40s;
+            }
+        }
+    }
+    
+    .contenedorTexto {
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+}

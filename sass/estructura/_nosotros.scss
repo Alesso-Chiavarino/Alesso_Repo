@@ -1,0 +1,148 @@
+/* ----- NOSOTROS ----- */
+
+.main_nosotros {
+    background: #3c4045;
+    padding-top: 125px;
+}
+
+.cordoba {
+    width: 100%;
+    padding: 45px 0px 45px 0px;
+    float: left;
+    .contenedor-texto {
+        text-align: center;
+        margin-left: 150px;
+        max-width: 600px;
+        line-height: 20px;
+        color: #979797;
+        .tit {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #acacac;
+            font-weight: 600;
+            font-family: 'Lora', serif;
+        }
+    }
+}
+
+.contenedor-imagen2 {
+    float: right;
+    background-image: url(../imagenes/messi.png);
+    vertical-align: top;
+    margin-top: 50px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 15px 15px 0px rgb(0 0 0 / 35%);
+    margin-left: 200px;
+}
+
+.informacion {
+    text-align: center;
+    margin-left: 50px;
+    max-width: 800px;
+    .titulo {
+        font-family: 'Lora', serif;
+        padding: 20px;
+        font-size: 55px;
+        font-weight: 400;
+        color: #acacac;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        color: #979797;
+        font-weight: 400;
+    }
+    .surgio {
+        text-align: center;
+        margin: 20px 20px;
+        color: #acacac;
+        font-weight: 600;
+        font-family: 'Lora', serif;
+    }
+    .tex {
+        padding-bottom: 40px;
+    }
+}
+
+.main_nosotros {
+    grid-area: nosotros;
+}
+
+.grid_nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "nosotros"
+    "footer";
+}
+
+.clientes {
+    background: #ffffff;
+    color: #fff; 
+    height: 500px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -20px;
+    h2 {
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        font-size: 40px;
+        color: #353535;
+        padding-top: 40px;
+        margin-bottom: 30px;
+        margin: 80px 0;
+    }
+    .cliente1 {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 20px;
+        text-align: left;
+        .cont_img_cliente {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+    }
+    .cliente2 {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        .cont_img_cliente {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-left: 30px;
+            padding-right: 100px;
+        }
+    }
+}
+
+.cont_img_cliente {
+    .foto_cliente {
+        vertical-align: top;
+    }
+}
+
+.opinion {
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    align-self: center;
+    width: 70%;
+}
