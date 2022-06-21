@@ -159,6 +159,7 @@
 
     .contenedor-imagen {
         height: 800px;
+        background-attachment: local; //Arreglo para celular
     }
 
     .contacto {
@@ -312,12 +313,21 @@
 
     .contenedor-imagen {
         height: 800px;
+        background-attachment: local; //Arreglo para celular
     }
 
     .contacto {
         .titulo {
             margin-bottom: 0;
         }
+    }
+
+    .contenedorUbi {
+        p {
+            font-size: 14px;
+        }
+        padding: 10px;
+        margin-right: 10px;
     }
 
 }
