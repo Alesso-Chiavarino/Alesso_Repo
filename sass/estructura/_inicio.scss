@@ -86,9 +86,7 @@
         margin: auto;
         h2 {
             padding-top: 50px;
-            font-family: 'Lora', serif;
-            font-size: 40px;
-            font-weight: 500;
+            @include title;
         }
         p {
             color: #5a5a5a;

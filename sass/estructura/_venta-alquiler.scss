@@ -31,8 +31,8 @@
         border-radius: 5px;
         margin-bottom: 20px;
         cursor: pointer;
-        transition: all 500ms ease;
         img {
+            transition: all 500ms ease;
             width: 100%;
             height: 225px;
             vertical-align: top;
@@ -44,23 +44,7 @@
         }
     }
     .casa2 {
-        background-color: #fff;
-        width: 30%;
-        margin-right: 25px;
-        overflow: hidden;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        cursor: pointer;
-        img {
-            width: 100%;
-            height: 225px;
-            vertical-align: top;
-            transition: all 500ms ease;
-            &:hover {
-                transform: scale(1.2);
-                opacity:  .8;
-            }
-        }
+        @extend .casa1;
     }
     .casa3 {
         width: 30%;

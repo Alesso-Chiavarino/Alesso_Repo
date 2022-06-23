@@ -1,1 +1,15 @@
+/* ----- VARIABLES ----- */
+
 $colorBack: rgb(255, 255, 255);
+
+/* ----- MIXINS ----- */
+
+@mixin title {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* ----- MAPS ----- */
+
+$paletaRedes: ('facebook': #1877f2, 'twitter': #1da1f2, 'instagram': #e1306c);
