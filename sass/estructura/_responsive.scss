@@ -11,6 +11,16 @@
     .logo {
         margin-left: -60px;
         a {
+            .logo_name {
+                padding-left: 32px;
+                // width: 200px;
+                .name {
+                    font-size: 18px;
+                }
+                .job {
+                    font-size: 14px;
+                }
+            }
             img {
                 width: 200px;
                 margin-bottom: 26px;
@@ -101,7 +111,7 @@
 
     .contenedor-imagen2 {
         position: absolute;
-        top: 780px;
+        top: 745px;
         left: -140px;
         width: 200px;
         height: 200px;
@@ -181,6 +191,16 @@
     .logo {
         margin-left: -65px;
         a {
+            .logo_name {
+                padding-left: 32px;
+                // width: 200px;
+                .name {
+                    font-size: 18px;
+                }
+                .job {
+                    font-size: 14px;
+                }
+            }
             img {
                 width: 200px;
                 margin-bottom: 26px;
@@ -278,7 +298,7 @@
 
     .contenedor-imagen2 {
         position: absolute;
-        top: 655px;
+        top: 620px;
         left: -100px;
         width: 200px;
         height: 200px;
