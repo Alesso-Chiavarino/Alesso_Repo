@@ -1,96 +1,150 @@
 /* ----- FOOTER ----- */
 
 footer {
-    background: #F4F6F6;
+    background-color: rgb(36, 36, 36);
     width: 100%;
-    .localizacion {
-        text-align: center;
-        padding: 40px;
-        @include title;
-    }
-    .iframe {
-        width: 100%;
-        height: 500px;
-    }
-    .redes-sociales {
-        margin-top: -4px;
-        width: 100%;
-        // background: url(../../imagenes/stardust.png);
-        background-color: rgb(36, 36, 36);
-        padding: 60px 0;
-        .contenedor-redes {
+    .foot_padre {
+        margin: 40px 0 40px 0;
+        display: flex;
+        justify-content: space-between;
+        .cont_logo_foot {
+            // padding: 20px;
+            margin-top: -90px;
+            width: 25%;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            .cont_imgLogo {
+                background-image: url(../../imagenes/icono\ FINAL.ico);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 130px;
+                height: 130px;
+            }
+            .logo_name_foot {
+                margin-left: -15px;
+                color: #fff;
+                letter-spacing: 0.5px;
+                .name_foot {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .job_foot {
+                    font-size: 14px;
+                }
+            }
         }
-        a {
+        .sobre_nosotros {
+            width: 50%;
             color: #fff;
-            text-align: center;
-            width: 100px;
-            display: block;
-            padding: 15px 0;
-            border-radius: 3px;
-            font-size: 30px;
-            margin: 0 20px;
-        }
-        .twitter {
-            &:hover {
-                background-color: map-get($map: $paletaRedes, $key: 'twitter');
+            .sobre {
+                // font-family: $primaryFont;
+                letter-spacing: 0.5px;
+                font-size: 20px;
+            }
+            .infoo {
+                color: #cfcfcf;
+                line-height: 23px;
+                margin: 5px 0 20px 0;
+            }
+            .ubicacion {
+                .contenedorUbi {
+                    display: flex;
+                    justify-content: space-around;
+                    // text-align: center;
+                    .direccion {
+                        h4 {
+                            margin-bottom: 10px;
+                            font-size: 20px;
+                        }
+                        p {
+                            color: rgb(207, 207, 207);
+                            line-height: 23px;
+                        }
+                    }
+                    .contacto_info {
+                        h4 {
+                            margin-bottom: 10px;
+                            font-size: 20px;
+                        }
+                        p {
+                            color: rgb(207, 207, 207);
+                            line-height: 23px;
+                        }
+                    }
+                    .horarios {
+                        .horariosHijo {
+                            h4 {
+                                margin-bottom: 10px;
+                                font-size: 20px;
+                            }
+                            p {
+                                color: rgb(207, 207, 207);
+                                line-height: 23px;
+                            }
+                        }
+                    }
+                }
             }
         }
-        .facebook {
-            &:hover {
-                background-color: map-get($map: $paletaRedes, $key: 'facebook');
+        .redes-sociales {
+            width: 25%;
+            .contac {
+                letter-spacing: 0.5px;
+                padding-bottom: 20px;
+                font-weight: bold;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
             }
-        }
-        .instagram {
-            &:hover {
-                background-color: map-get($map: $paletaRedes, $key: 'instagram');
+            .contenedor-redes {
+                display: flex;
+                justify-content: center;
             }
-        }
-        .whatsapp {
-            &:hover {
-                background-color: map-get($map: $paletaRedes, $key: 'whatsapp');
+            a {
+                color: #fff;
+                text-align: center;
+                width: 80px;
+                padding: 15px 0;
+                border-radius: 3px;
+                font-size: 25px;
+                margin: 0 5px;
+            }
+            .twitter {
+                &:hover {
+                    background-color: map-get($map: $paletaRedes, $key: 'twitter');
+                }
+            }
+            .facebook {
+                &:hover {
+                    background-color: map-get($map: $paletaRedes, $key: 'facebook');
+                }
+            }
+            .instagram {
+                &:hover {
+                    background-color: map-get($map: $paletaRedes, $key: 'instagram');
+                }
+            }
+            .whatsapp {
+                &:hover {
+                    background-color: map-get($map: $paletaRedes, $key: 'whatsapp');
+                }
             }
         }
     }
-}
-
-.contenedorUbi {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 300;
-    .direccion {
-        line-height: 27px;
-    }
-}
-
-.horarios {
-    .horariosHijo {
-        h4 {
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-        p {
-            line-height: 27px;
-        }
-    }
-}
-
-.hr {
-    margin: auto;
-    border: none;
-    height: 1px;
-    background-color: #7a7a7a;
-    max-width: 60%;
-    // color: aqua;
 }
 
 .copy {
     width: 100%;
     // background-color: rgba(36, 36, 36, 0.993);
     background-color: rgb(36, 36, 36);
+    .hr {
+        margin: auto;
+        border: none;
+        height: 1px;
+        background-color: #7a7a7a;
+        max-width: 60%;
+    }
     p {
         color: #fff;
         text-align: center;
