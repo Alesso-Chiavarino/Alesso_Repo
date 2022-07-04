@@ -21,6 +21,7 @@ body {
 }
 
 .arriba {
+    box-shadow: 1px 1px 1px solid #000;
     display: flex;
     justify-content: space-around;
     background-color: $colorBack;
