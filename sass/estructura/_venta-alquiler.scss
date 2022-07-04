@@ -1,17 +1,17 @@
 /* ----- VENTA Y ALQUILER ----- */
 
 .main_venta {
-    background-color: #303030;
+    background-color: #f4f6f6;
     padding-top: 125px;
 }
 
 .titu {
-    font-family: 'Lora', serif;
+    font-family: $primaryFont;
     padding: 40px;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    color: #f2f2f2;
+    color: #000000;
 }
 
 .casas {
@@ -24,6 +24,7 @@
     flex-direction: row;
     justify-content: center;
     .casa1 {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
         width: 30%;
         background-color: #fff;
         margin-right: 25px;
@@ -47,6 +48,7 @@
         @extend .casa1;
     }
     .casa3 {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
         width: 30%;
         background-color: #fff;
         overflow: hidden;
@@ -65,6 +67,7 @@
         }
     }
     .casa4 {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
         width: 30%;
         background-color: #fff;
         margin-right: 25px;
@@ -84,6 +87,7 @@
         }
     }
     .casa5 {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
         width: 30%;
         background-color: #fff;
         margin-right: 25px;
@@ -103,6 +107,7 @@
         }
     }
     .casa6 {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
         width: 30%;
         background-color: #fff;
         overflow: hidden;
@@ -130,7 +135,7 @@
     span {
         margin-left: -45px;
         color: #3f3f3f;
-        font-family: 'Lora', serif;
+        font-family: $primaryFont;
         font-weight: 400;
     }
 }
@@ -141,7 +146,7 @@
         text-align: right;
         font-size: 16px;
         padding: 5px;
-        font-family: 'Lora', serif;
+        font-family: $primaryFont;
     }
     .descrip-casa {
         color: #3f3f3f;
