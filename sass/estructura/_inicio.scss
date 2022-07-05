@@ -113,8 +113,8 @@ footer {
 
 .grid_inicio {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "header"
     "acerca"

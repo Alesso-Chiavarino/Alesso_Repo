@@ -4,11 +4,13 @@ footer {
     background-color: rgb(36, 36, 36);
     width: 100%;
     .foot_padre {
-        margin: 40px 0 40px 0;
+        // margin: 40px 0 40px 0;
+        padding: 40px 0 40px 0;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         .cont_logo_foot {
-            // padding: 20px;
+            padding-left: 35px;
             margin-top: -90px;
             width: 25%;
             display: flex;
@@ -50,6 +52,7 @@ footer {
             .ubicacion {
                 .contenedorUbi {
                     display: flex;
+                    flex-wrap: wrap;
                     // justify-content: left;
                     // text-align: center;
                     .direccion {
@@ -90,6 +93,7 @@ footer {
             }
         }
         .redes-sociales {
+            padding-left: 100px;
             width: 25%;
             .contac {
                 letter-spacing: 0.5px;
@@ -152,4 +156,6 @@ footer {
         text-align: center;
         padding: 15px;
     }
+
+
 }
