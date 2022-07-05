@@ -50,9 +50,10 @@ footer {
             .ubicacion {
                 .contenedorUbi {
                     display: flex;
-                    justify-content: space-around;
+                    // justify-content: left;
                     // text-align: center;
                     .direccion {
+                        margin-right: 180px;
                         h4 {
                             margin-bottom: 10px;
                             font-size: 20px;
@@ -63,6 +64,7 @@ footer {
                         }
                     }
                     .contacto_info {
+                        margin-right: 180px;
                         h4 {
                             margin-bottom: 10px;
                             font-size: 20px;
