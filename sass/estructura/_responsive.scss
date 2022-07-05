@@ -19,6 +19,12 @@
              width: 90%;
         }   
     }
+    .contenedor-imagen2 {
+        width: 25em;
+    }
+
+    // Footer //
+    
 }
 
 /* ----- Large devices (desktops, 992px and up) ----- */
@@ -142,6 +148,15 @@
             font-size: 12px;
         }
     }
+    .contenedor-imagen2 {
+        width: 15em;
+        margin-top: 170px;
+    }
+
+     // Contacto //
+     .formulario {
+        max-width: 500px;
+    }
 
 }
 
@@ -163,6 +178,19 @@
     // Nosotros //
     .clientes {
         height: 420px;
+    }
+    .info {
+        width: 80%;
+    }
+    .contenedor-imagen2 {
+        margin: 0.625em 10px 2.5em 10px;
+        width: 25em;
+        height: 24em;
+    }
+
+    // Contacto //
+    .formulario {
+        max-width: 300px;
     }
 }
 
@@ -187,18 +215,23 @@
             width: 90%;
         }
     }
+
+     // Contacto //
+     .formulario {
+        max-width: 200px;
+    }
 }
 
-@media screen and (max-width: 1500px) {
-    .contenedor-imagen2 {
+// @media screen and (max-width: 1500px) {
+    // .contenedor-imagen2 {
         // margin-right: -480px;
         // width: 300px;
         // position: relative;
         // left: -100px;
         // bottom: 680px;
         // align-self: center;
-    }    
-}
+    // }    
+// }
 
 
 

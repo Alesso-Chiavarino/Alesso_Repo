@@ -6,13 +6,13 @@
 }
 
 .cordoba {
-    // width: 50%;
+    // width: 80%;
     padding: 2.8125em 0em 1.0125em 0em;
     // float: left;
     .contenedor-texto {
         text-align: center;
-        margin-left: 9.375em;
-        max-width: 37.5em;
+        // margin-left: 9.375em;
+        // max-width: 37.5em;
         line-height: 1.25em;
         color: #979797;
         .tit {
@@ -26,6 +26,7 @@
 }
 
 .contenedor-imagen2 {
+    background-size: cover;
     // float: right;
     background-image: url(../imagenes/messi.png);
     vertical-align: top;
@@ -40,8 +41,8 @@
 
 .informacion {
     text-align: center;
-    margin-left: 3.125em;
-    max-width: 50em;
+    // margin-left: 3.125em;
+    // max-width: 50em;
     .titulo {
         padding: 0.5em;
         font-family: $primaryFont;
@@ -109,6 +110,11 @@
             border-radius: 100%;
             overflow: hidden;
             margin-right: 1.875em;
+            .foto_cliente {
+                background-position: center;
+                background-size: cover;
+                vertical-align: top;
+            }
         }
     }
     .cliente2 {
@@ -124,13 +130,12 @@
             overflow: hidden;
             margin-left: 1.875em;
             padding-right: 6.25em;
+            .foto_cliente {
+                background-size: cover;
+                background-position: center;
+                vertical-align: top;
+            }
         }
-    }
-}
-
-.cont_img_cliente {
-    .foto_cliente {
-        vertical-align: top;
     }
 }
 
@@ -149,6 +154,7 @@
 }
 
 .flex_nosotros {
+    // max-height: 700px;
     display: flex;
     justify-content: space-around;
     // justify-tracks: center;
