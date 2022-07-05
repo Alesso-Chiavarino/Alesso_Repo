@@ -5,13 +5,13 @@ footer {
     width: 100%;
     .foot_padre {
         // margin: 40px 0 40px 0;
-        padding: 40px 0 40px 0;
+        padding: 2.5em 0 2.5em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .cont_logo_foot {
-            padding-left: 35px;
-            margin-top: -90px;
+            padding-left: 2.1875em;
+            margin-top: -5.625em;
             width: 25%;
             display: flex;
             align-items: center;
@@ -20,19 +20,19 @@ footer {
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
-                width: 130px;
-                height: 130px;
+                width: 8.125em;
+                height: 8.125em;
             }
             .logo_name_foot {
-                margin-left: -15px;
+                margin-left: -0.9375em;
                 color: #fff;
                 letter-spacing: 0.5px;
                 .name_foot {
-                    font-size: 20px;
+                    font-size: 1.25em;
                     font-weight: bold;
                 }
                 .job_foot {
-                    font-size: 14px;
+                    font-size: 0.875em;
                 }
             }
         }
@@ -41,13 +41,14 @@ footer {
             color: #fff;
             .sobre {
                 // font-family: $primaryFont;
+                margin-bottom: 0.625em;
                 letter-spacing: 0.5px;
-                font-size: 20px;
+                font-size: 1.25em;
             }
             .infoo {
                 color: #cfcfcf;
-                line-height: 23px;
-                margin: 5px 0 20px 0;
+                line-height: 1.4375em;
+                margin: 0.3125em 0 1.25em 0;
             }
             .ubicacion {
                 .contenedorUbi {
@@ -56,36 +57,36 @@ footer {
                     // justify-content: left;
                     // text-align: center;
                     .direccion {
-                        margin-right: 180px;
+                        margin-right: 11.25em;
                         h4 {
-                            margin-bottom: 10px;
-                            font-size: 20px;
+                            margin-bottom: 0.625em;
+                            font-size: 1.25em;
                         }
                         p {
                             color: rgb(207, 207, 207);
-                            line-height: 23px;
+                            line-height: 1.4375em;
                         }
                     }
                     .contacto_info {
-                        margin-right: 180px;
+                        margin-right: 11.25em;
                         h4 {
-                            margin-bottom: 10px;
-                            font-size: 20px;
+                            margin-bottom: 0.625em;
+                            font-size: 1.25em;
                         }
                         p {
                             color: rgb(207, 207, 207);
-                            line-height: 23px;
+                            line-height: 1.4375em;
                         }
                     }
                     .horarios {
                         .horariosHijo {
                             h4 {
-                                margin-bottom: 10px;
-                                font-size: 20px;
+                                margin-bottom: 0.625em;
+                                font-size: 1.25em;
                             }
                             p {
                                 color: rgb(207, 207, 207);
-                                line-height: 23px;
+                                line-height: 1.4375em;
                             }
                         }
                     }
@@ -93,13 +94,13 @@ footer {
             }
         }
         .redes-sociales {
-            padding-left: 100px;
+            padding-left: 6.25em;
             width: 25%;
             .contac {
                 letter-spacing: 0.5px;
-                padding-bottom: 20px;
+                padding-bottom: 1.25rem;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 1.25em;
                 color: #fff;
                 text-align: center;
             }
@@ -110,11 +111,11 @@ footer {
             a {
                 color: #fff;
                 text-align: center;
-                width: 80px;
-                padding: 15px 0;
+                width: 5em;
+                padding: 0.9375rem 0;
                 border-radius: 3px;
-                font-size: 25px;
-                margin: 0 5px;
+                font-size: 1.5625em;
+                margin: 0 0.3125em;
             }
             .twitter {
                 &:hover {
@@ -147,14 +148,14 @@ footer {
     .hr {
         margin: auto;
         border: none;
-        height: 1px;
+        height: 0.0625em;
         background-color: #7a7a7a;
         max-width: 60%;
     }
     p {
         color: #fff;
         text-align: center;
-        padding: 15px;
+        padding: 0.9375em;
     }
 
 

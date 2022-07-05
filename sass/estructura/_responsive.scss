@@ -1,379 +1,82 @@
 /* ----- RESPONSIVE ----- */
 
-/* TAMAÑO CELULAR (320PX) */
-@media screen and (max-width: 320px) and (min-width: 0px) {
-
-    .banner {
-        height: 600px;
-        background-attachment: local; //Arreglo para celular
+/* ----- Extra large devices (large desktops, 1200px and up) ----- */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
     }
 
-    .logo {
-        margin-left: -60px;
-        a {
-            .logo_name {
-                padding-left: 32px;
-                // width: 200px;
-                .name {
-                    font-size: 18px;
-                }
-                .job {
-                    font-size: 14px;
-                }
-            }
-            img {
-                width: 200px;
-                margin-bottom: 26px;
-                position: relative;
-                top: 13px;
-            }
+    // Alquiler y Venta //
+    .desc_icono {
+        span {
+            padding-left: 10px;
         }
     }
+}
 
-    .arriba {
-        label {
-            margin-right: -40px; 
+/* ----- Large devices (desktops, 992px and up) ----- */
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 11px;
+    }
+    // Alquiler y Venta //
+    .desc_icono {
+        span {
+            padding-left: 10px;
         }
     }
-    
-    .contenedorTexto {
-        .prop-casas {
-            text-align: center;
-            font-size: 30px;
-        }
-    }
-    
-    // .grid_inicio {
-        // grid-template-columns: 320px;
-    // }
+}
 
-    .contenedorUbi {
-        align-items: center;
-        .direccion {
-            p {
-                font-size: 12px;
-                line-height: 15px;
-            }
-        }
-        .horarios {
-            .horariosHijo {
-                font-size: 12px;
-            }
-        }
+/* ----- Medium devices (tablets, 768px and up) ----- */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
     }
 
-    // .grid_venta_alquiler {
-        // grid-template-columns: 320px;
-    // }
-
+    // Alquiler y Venta //
+    .desc_icono {
+        span {
+            padding-left: 16px;
+        }
+    }
     .casas {
         .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
-            width: 90%;
+            width: 40%;
             margin: 0;
             margin-bottom: 20px;
         }
-    }
-
-    .cont-carac {
-        p {
-            font-size: 12px;
-            line-height: 15px;
+        .casa1, .casa3, .casa5 {
+            margin-right: 20px;
         }
-        h3 {
-            font-size: 14px;
-        }
-        .desc_icono {
-            i {
-                margin-right: 40px;
-                margin-left: 1px;
-            }
+        .casa1, .casa2 {
+            margin: 10px 10px 20px 10px;
         }
     }
 
-    // .grid_nosotros {
-    //     grid-template-columns: 320px;
-    // }
-
-    .cordoba {
-        padding-bottom: 20px;
-        .contenedor-texto {
-            margin: 0;
-            padding: 0;
-            .tit {
-                font-size: 25px;
-            }
-            p {
-                font-size: 14px;
-                padding: 0 40px;
-            }
-        }
-    }
-
-    .contenedor-imagen2 {
-        position: absolute;
-        top: 745px;
-        left: -140px;
-        width: 200px;
-        height: 200px;
-        background-size: cover;
-    }
-
-    .informacion {
-        margin: 0;
-        .titulo {
-            font-size: 35px;
-        }
-        .texto_nosotros {
-            margin-bottom: 250px;
-        }
-        p {
-            font-size: 14px;
-            padding: 0 40px;
-        }
-    }
-
-    .clientes {
-        margin-bottom: -80px;
-        .cliente1 {
-            padding: 0 10px;
-            width: 100%;
-            margin-bottom: 50px;
-        }
-        .cliente2 {
-            padding: 0 10px;
-            width: 100%;
-        }
-        h2 {
-            font-size: 23px;
-            width: 80%;
-            margin: auto;
-            margin-bottom: 30px;
-        }
-        .opinion {
-            font-size: 12px;
-            line-height: normal;
-        }
-    }
-
-    // .grid_contacto {
-    //     grid-template-columns: 320px;
-    // }
-
-    .formulario {
-        width: 80%;
-        .boton {
-            width: 120px;
-            padding: 15px;
-        }
-    }
-
-    .contenedor-imagen {
-        height: 800px;
-        background-attachment: local; //Arreglo para celular
-    }
-
-    .contacto {
-        .titulo {
-            margin-bottom: 0;
-        }
-    }
-
-}
-
-/* TAMAÑO IPHONE 13 */
-@media screen and (max-width: 400px) and (min-width: 321px) {
-
-    .banner {
-        height: 600px;
-        background-attachment: local; //Arreglo para celular
-    }
-
+    // Header //
     .logo {
-        margin-left: -65px;
-        a {
-            .logo_name {
-                padding-left: 32px;
-                // width: 200px;
-                .name {
-                    font-size: 18px;
-                }
-                .job {
-                    font-size: 14px;
-                }
-            }
-            img {
-                width: 200px;
-                margin-bottom: 26px;
-                position: relative;
-                top: 13px;
-            }
-        }
+        margin-left: -40px;
     }
-
-    .arriba {
-        label {
-            margin-right: -30px;
-        }
-    }
-
-    // .grid_inicio {
-    //     // grid-template-columns: 400px;
-    // }
-
-    // .grid_venta_alquiler {
-    //     // grid-template-columns: 400px;
-    // }
-
-    .contenedorTexto {
-        .prop-casas {
-            font-size: 30px;
-            text-align: center;
-        }
-    }
-
-    .casas {
-        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
-            width: 80%;
-            margin: 0;
-            margin-bottom: 20px;
-        }
-    }
-
-    .cont-carac {
-        p {
-            font-size: 12px;
-            line-height: 15px;
-        }
-        h3 {
-            font-size: 14px;
-        }
-        .desc_icono {
-            i {
-                margin-right: 20px;
-            }
-        }
-    }
-
-    // .grid_nosotros {
-    //     grid-template-columns: 400px;
-    // }
-
-    .cordoba {
-        padding-bottom: 20px;
-        .contenedor-texto {
-            margin: 0;
-            padding: 0;
-            .tit {
-                font-size: 25px;
-            }
-            p {
-                font-size: 14px;
-                padding: 0 40px;
-            }
-        }
-    }
-    
-    .clientes {
-        margin-bottom: -50px;
-        .cliente1 {
-            margin-bottom: 50px;
-            padding: 0 10px;
-            width: 100%;
-        }
-        .cliente2 {
-            padding: 0 10px;
-            width: 100%;
-        }
-        h2 {
-            font-size: 25px;
-            width: 80%;
-            margin: auto;
-            margin-bottom: 30px;
-        }
-        .opinion {
-            font-size: 13px;
-            line-height: 20px;
-        }
-    }
-
-    .contenedor-imagen2 {
-        position: absolute;
-        top: 620px;
-        left: -100px;
-        width: 200px;
-        height: 200px;
-        background-size: cover;
-    }
-
-    .informacion {
-        margin: 0;
-        .titulo {
-            font-size: 35px;
-        }
-        .texto_nosotros {
-            margin-bottom: 250px;
-        }
-        p {
-            font-size: 14px;
-            padding: 0 40px;
-        }
-    }
-
-    // .grid_contacto {
-    //     grid-template-columns: 400px;
-    // }
-
-    .formulario {
-        width: 80%;
-        .boton {
-            width: 120px;
-            padding: 15px;
-        }
-    }
-
-    .contenedor-imagen {
-        height: 800px;
-        background-attachment: local; //Arreglo para celular
-    }
-
-    .contacto {
-        .titulo {
-            margin-bottom: 0;
-        }
-    }
-
-    .contenedorUbi {
-        p {
-            font-size: 14px;
-        }
-        padding: 10px;
-        margin-right: 10px;
-    }
-
-}
-
-/* TAMAÑO IDEAL PARA PONER EL MENU DE HAMBURGUESA */
-@media screen and (max-width: 901px){
-
+    // MENU DE HAMBURGUESA //
     header {
         label {
             display: block;
             position: fixed;
-            top: 40px;
-            right: 40px;
+            top: 2.5em;
+            right: 2.5em;
         }
     }
 
     .menu {
         ul {
             position: fixed;
-            top: 130px;
+            top: 8.125em;
             right: -100%;
             background-color: #222;
             width: 45%;
             li {
                 padding: 0;
-                padding-top: 30px;
+                padding-top: 1.875em;
                 margin: 0;
                 display: block;
                 display: flex;
@@ -383,7 +86,7 @@
                 }
                 a {
                     color: #fff;
-                    padding-bottom: 25px;
+                    padding-bottom: 1.5625em;
                     &:hover {
                         border: none;
                     }
@@ -391,8 +94,16 @@
             }
         }
     }
+    header {
+        label {
+            top: 1.5625rem;
+        }
+    }
 
     #check {
+        // .fa-solid {
+        //     padding-bottom: 10px;
+        // }
         &:checked ~ .menu {
             ul {
                 right: 0px;
@@ -403,8 +114,39 @@
     
     .contenedorTexto {
         h1 {
-            font-size: 38px;
+            font-size: 2.375em;
         }
     }
 
 }
+
+/* ----- Small devices (Landscape phones, 576px and up) ----- */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    // Alquiler y Venta //
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 80%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+    header {
+        label {
+            top: 1.2rem;
+        }
+    }
+}
+
+
+
+
