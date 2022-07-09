@@ -134,24 +134,21 @@ footer {
             }
         }
     }
+    .copy {
+        width: 100%;
+        background-color: rgb(36, 36, 36);
+        .hr {
+            margin: auto;
+            border: none;
+            height: 0.0625rem;
+            background-color: #7a7a7a;
+            max-width: 60%;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            padding: 0.9375em;
+        }
+    }
 }
 
-.copy {
-    width: 100%;
-    // background-color: rgba(36, 36, 36, 0.993);
-    background-color: rgb(36, 36, 36);
-    .hr {
-        margin: auto;
-        border: none;
-        height: 0.0625rem;
-        background-color: #7a7a7a;
-        max-width: 60%;
-    }
-    p {
-        color: #fff;
-        text-align: center;
-        padding: 0.9375em;
-    }
-
-
-}

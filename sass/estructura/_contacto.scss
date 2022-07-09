@@ -1,91 +1,92 @@
 /* ----- CONTACTO ----- */
 
-.contenedor-imagen {
-    padding-top: 6.25em;
-    background-image: url(../imagenes/contacto.webp);
-    vertical-align: top;
-    background-color: rgb(49, 49, 49);
-    background-blend-mode: soft-light; 
-    width: 100%;
-    height: 60.625em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-}
-
-.contacto {
-    width: 100%;
-    text-align: center;
-    h3 {
-        color: #fff;
-        font-family: $primaryFont;
-        padding: 2.5rem;
-        font-size: 2.5em;
-        font-weight: normal;
-        margin-bottom: 3.125rem;
-    }
-}
-
-.formulario {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 50em;
-    input[type="text"],input[type="email"] {
-        background: none;
-        border: none;
-        font-size: 1.125em;
-        text-align: center;
-        margin-bottom: 2.5em;
-        border-bottom: 2px solid rgb(194, 194, 194);
-        padding: 0.625em;
-        outline: none;
-        color: rgba(255, 255, 255, 0.87);
-        &:focus {
-            border-bottom: 2px solid rgb(255, 255, 255);
+.main_contacto {
+    .contenedor-imagen {
+        padding-top: 6.25em;
+        background-image: url(../imagenes/contacto.webp);
+        vertical-align: top;
+        background-color: rgb(49, 49, 49);
+        background-blend-mode: soft-light; 
+        width: 100%;
+        height: 60.625em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        .contacto {
+            width: 100%;
+            text-align: center;
+            .titulo {
+                color: #fff;
+                font-family: $primaryFont;
+                padding: 2.5rem;
+                font-size: 2.5em;
+                font-weight: normal;
+                margin-bottom: 3.125rem;
+            }
+            .formulario {
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                max-width: 50em;
+                input[type="text"],input[type="email"] {
+                    background: none;
+                    border: none;
+                    font-size: 1.125em;
+                    text-align: center;
+                    margin-bottom: 2.5em;
+                    border-bottom: 2px solid rgb(194, 194, 194);
+                    padding: 0.625em;
+                    outline: none;
+                    color: rgba(255, 255, 255, 0.87);
+                    &:focus {
+                        border-bottom: 2px solid rgb(255, 255, 255);
+                    }
+                }
+                textarea {
+                    color: rgba(255, 255, 255, 0.87);
+                    background: none;
+                    border: none;
+                    font-size: 1.125em;
+                    text-align: center;
+                    margin-bottom: 3.125em;
+                    border-bottom: 2px solid rgb(194, 194, 194);
+                    padding: 0.625em;
+                    outline: none;
+                    &:focus {
+                        border-bottom: 2px solid rgb(255, 255, 255);
+                    }
+                }
+                .boton {
+                    font-size: 1em;
+                    background: none;
+                    border: none;
+                    border: 2px solid rgb(230, 230, 230);
+                    color: #fff;
+                    width: 10.625em;
+                    padding: 1.25em;
+                    margin: auto;
+                    cursor: pointer;
+                    outline: none;
+                    &:hover {
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                    }
+                }
+                ::placeholder { 
+                    color: rgba(255, 255, 255, 0.87);
+                    font-family: Arial, Helvetica, sans-serif
+                }
+            }
         }
     }
-    textarea {
-        color: rgba(255, 255, 255, 0.87);
-        background: none;
-        border: none;
-        font-size: 1.125em;
-        text-align: center;
-        margin-bottom: 3.125em;
-        border-bottom: 2px solid rgb(194, 194, 194);
-        padding: 0.625em;
-        outline: none;
-        &:focus {
-            border-bottom: 2px solid rgb(255, 255, 255);
-        }
-    }
-    .boton {
-        font-size: 1em;
-        background: none;
-        border: none;
-        border: 2px solid rgb(230, 230, 230);
-        color: #fff;
-        width: 10.625em;
-        padding: 1.25em;
-        margin: auto;
-        cursor: pointer;
-        outline: none;
-        &:hover {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-        }
-    }
 }
 
-::placeholder { 
-    color: rgba(255, 255, 255, 0.87);
-    font-family: Arial, Helvetica, sans-serif
-}
+/* ----- GRID ----- */
 
 .main_contacto {
     grid-area: contacto;
