@@ -2,6 +2,8 @@
 
 /* ----- Extra large devices (large desktops, 1200px and up) ----- */
 @media screen and (max-width: 1200px) {
+
+    // Inicio //
     body {
         font-size: 14px;
     }
@@ -26,6 +28,8 @@
 
 /* ----- Large devices (desktops, 992px and up) ----- */
 @media screen and (max-width: 992px) {
+
+    // Inicio //
     body {
         font-size: 11px;
     }
@@ -39,35 +43,15 @@
 
 /* ----- Medium devices (tablets, 768px and up) ----- */
 @media screen and (max-width: 768px) {
+
+    // Inicio //
     body {
         font-size: 12px;
     }
-
-    // Alquiler y Venta //
-    .desc_icono {
-        span {
-            padding-left: 16px;
-        }
-    }
-    .casas {
-        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
-            width: 40%;
-            margin: 0;
-            margin-bottom: 20px;
-        }
-        .casa1, .casa3, .casa5 {
-            margin-right: 20px;
-        }
-        .casa1, .casa2 {
-            margin: 10px 10px 20px 10px;
-        }
-    }
-
-    // Header //
     .logo {
         margin-left: -40px;
     }
-    // MENU DE HAMBURGUESA //
+    // menú de hamburguesa //
     header {
         label {
             display: block;
@@ -76,7 +60,6 @@
             right: 2.5em;
         }
     }
-
     .menu {
         ul {
             position: fixed;
@@ -119,7 +102,6 @@
         }
     }
 
-    // Inicio //
     .contenedorTexto {
         h1 {
             font-size: 2.375em;
@@ -128,6 +110,33 @@
     .banner {
         height: 600px;
         background-attachment: local; //Arreglo para celular
+    }
+
+    // Alquiler y Venta //
+    .selector {
+        min-width: 40%;
+    }
+    .busqueda {
+        width: 110px !important;
+        margin: auto !important;
+    }
+    .desc_icono {
+        span {
+            padding-left: 16px;
+        }
+    }
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 40%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .casa1, .casa3, .casa5 {
+            margin-right: 20px;
+        }
+        .casa1, .casa2 {
+            margin: 10px 10px 20px 10px;
+        }
     }
 
     // Nosotros //
@@ -147,7 +156,7 @@
         margin-top: 170px;
     }
 
-     // Contacto //
+    // Contacto //
      .formulario {
         max-width: 500px;
     }
@@ -184,11 +193,20 @@
 
 /* ----- Small devices (Landscape phones, 576px and up) ----- */
 @media screen and (max-width: 576px) {
+
+    // Inicio //
     body {
         font-size: 12px;
     }
 
     // Alquiler y Venta //
+    .busqueda {
+        width: 100px;
+        margin: auto;
+    }
+    .selector {
+        width: 40%;
+    }
     .casas {
         .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
             width: 80%;
@@ -257,6 +275,8 @@
 
 /* ----- Extra Small devices (comprate otro) (nokias, 300px and up) ----- */
 @media screen and (max-width: 300px) {
+
+    // Inicio //
     body {
         font-size: 10px;
     }
@@ -279,7 +299,7 @@
 
      // Contacto //
      .formulario {
-        max-width: 200px;
+        max-width: 200px !important;
     }
 
     // Footer //
