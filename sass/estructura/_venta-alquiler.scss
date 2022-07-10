@@ -36,22 +36,37 @@
                 border-bottom: 2px solid rgb(0, 0, 0);
             }
         }
-        .selec_precio {
-            border: none;
-            background-color: #d3d3d3;
-            outline: none;
-            padding: 0.9375em 1.25em;
+        .padre_precio {
             width: 14.8%;
-            margin-bottom: 1.25em;
-            border-bottom: 2px solid rgba(63, 63, 63, 0.507);
-            margin-right: 0.75em;
-            &:focus {
-                border-bottom: 2px solid #000;
+            display: flex;
+            flex-direction: column;
+            margin-right: 0.3125em;
+            &:hover {
+                .border {
+                    border-bottom: 2px solid #000;
+                }
             }
-            &::placeholder {
-                color: rgb(63, 63, 63);
-                font-size: 1em;
+            .selec_precio {
+                border: 0 !important;
+                background-color: #d3d3d3;
+                outline: none;
+                padding: 0.9375em 1.25em;
+                width: 100%;
+                margin-bottom: 0.2em;
+                margin-right: 0.75em;
+                &::placeholder {
+                    color: rgb(63, 63, 63);
+                    font-size: 1em;
+                }
             }
+            .border {
+                border-bottom: 2px solid rgba(63, 63, 63, 0.507);
+                width: 100%;
+            }
+        }
+        .padre_precio2 {
+            @extend .padre_precio;
+            margin-right: 0;
         }
         .busqueda {
             font-size: 1em;
