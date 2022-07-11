@@ -119,12 +119,20 @@
     }
 
     // Alquiler y Venta //
+    .cont_selec {
+        justify-content: center;
+    }
     .selector {
         min-width: 40%;
     }
-    .busqueda {
-        width: 6.875em !important;
-        margin: auto !important;
+    .padre_precios {
+        min-width: 40%;
+    }
+    .padre_busqueda {
+        min-width: 40%;
+    }
+    .result_busqueda {
+        max-width: 87%;
     }
     .desc_icono {
         span {
@@ -206,13 +214,7 @@
     }
 
     // Alquiler y Venta //
-    .busqueda {
-        width: 100px;
-        margin: auto;
-    }
-    .selector {
-        width: 40%;
-    }
+
     .casas {
         .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
             width: 80%;
@@ -291,6 +293,18 @@
             top: 1.2rem;
         }
     }
+
+    // Venta y Alquiler //
+
+    .selector {
+        min-width: 100%;
+    }
+    .padre_precios {
+        min-width: 100%;
+    }
+    .padre_busqueda {
+        width: 100%;
+    } 
 
     // Nosotros //
     .clientes {
