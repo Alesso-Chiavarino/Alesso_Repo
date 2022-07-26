@@ -2,6 +2,8 @@
 
 $colorBack: rgb(255, 255, 255);
 $primaryFont: 'Lora', serif;
+$boton: estilo;
+$lista: #000;
 
 // ----- MIXINS ----- //
 
@@ -19,7 +21,7 @@ $paletaRedes: ('facebook': #1877f2, 'twitter': #1da1f2, 'instagram': #e1306c, 'w
 
 @keyframes banner {
 	0%, 20% {
-		background-image: url("../imagenes/imagen1.jpg");
+	background-image: url("../imagenes/imagen1.jpg");
         background-size: cover;
         background-position: center;
 	}
@@ -41,4 +43,22 @@ $paletaRedes: ('facebook': #1877f2, 'twitter': #1da1f2, 'instagram': #e1306c, 'w
         background-size: cover;
         background-position: center;
 	}
+}
+
+// ----- CONDICIONALES ----- //
+
+.busqueda {
+        @if ($boton == estilo) {
+                font-size: 1em;
+                background: none;
+                border: none;
+                background-color: rgba(14,14,14,.712);
+                color: #fff;
+                width: 45%;
+                height: 3.75em;
+                cursor: pointer;
+                outline: none;    
+        } @else {
+                display: none;
+        }
 }
